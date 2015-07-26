@@ -28,6 +28,7 @@ function! Comfortablecpp_GenerateShowStructFunction()
   py sys.argv = vim.eval("selected")
   pyfile GenerateShowStructFunction.py
 
+
 endfunction
 
 " Command enable
