@@ -6,10 +6,10 @@
 
 scriptencoding utf-8
 
-""if !exists('g:loaded_comfortablecpp')
-""    finish
-""endif
-""let g:loaded_comfortablecpp = 1
+if !exists('g:loaded_comfortablecpp')
+    finish
+endif
+let g:loaded_comfortablecpp = 1
 
 let s:save_cpo = &cpo
 set cpo&vim
@@ -28,12 +28,7 @@ function! Comfortablecpp_GenerateShowStructFunction()
   py sys.argv = vim.eval("selected")
   pyfile GenerateShowStructFunction.py
 
-
 endfunction
-
-" Command enable
-command! -nargs=0 GenerateShowStructFunction :<C-U>call Comfortablecpp_GenerateShowStructFunction()
-vmap <silent> ssf :<C-U>call Comfortablecpp_GenerateShowStructFunction()<CR>
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

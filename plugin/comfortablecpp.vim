@@ -14,6 +14,8 @@ let g:loaded_comfortablecpp = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+" Command enable
+vmap <silent> cfs :<C-U>call Comfortablecpp_GenerateShowStructFunction()<CR>
 
 
 let &cpo = s:save_cpo
