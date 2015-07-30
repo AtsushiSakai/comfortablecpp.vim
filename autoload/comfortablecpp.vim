@@ -14,8 +14,7 @@ let g:loaded_comfortablecpp = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-""function! bookmarklet#GenerateBookmarklet()
-function! Comfortablecpp_GenerateShowStructFunction()
+function! comfortablecpp#Comfortablecpp_GenerateShowStructFunction()
   "Get selected code with visual mode
   let tmp = @@
   silent normal gvy
