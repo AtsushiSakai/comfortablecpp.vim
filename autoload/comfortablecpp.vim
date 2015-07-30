@@ -25,7 +25,7 @@ function! comfortablecpp#Comfortablecpp_GenerateShowStructFunction()
   py import sys
   py import vim
   py sys.argv = vim.eval("selected")
-  pyfile GenerateShowStructFunction.py
+  pyfile <sfile>:h:h/autoload/GenerateShowStructFunction.py
 
 endfunction
 
