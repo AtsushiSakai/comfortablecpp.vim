@@ -15,13 +15,13 @@ This vim plugin has useful functions.
 
 This function generate the C++ function to show variables of selected struct
 
-<!--![samplegif](https://github.com/AtsushiSakai/bookmarklet.vim/blob/master/sample/sample.gif)-->
+![samplegif](https://github.com/AtsushiSakai/comfortablecpp.vim/blob/master/sample/showfunction.gif)
 
 1. Select struct with visual mode
 
-2. command "cfs" which stands for Comfortable Showfunction
+2. command "cfs", which stands for Comfortable Showfunction
 
-3. command p (ShowFunction is pasted)
+3. command p (paste the ShowFunction)
 
 
 ## License
