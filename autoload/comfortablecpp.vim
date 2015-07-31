@@ -14,6 +14,9 @@ let g:loaded_comfortablecpp = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+"get filepath
+let g:path_comfortablecpp=expand("<sfile>:p:h:h")
+
 function! comfortablecpp#Comfortablecpp_GenerateShowStructFunction()
   "Get selected code with visual mode
   let tmp = @@
@@ -25,8 +28,8 @@ function! comfortablecpp#Comfortablecpp_GenerateShowStructFunction()
   py import sys
   py import vim
   py sys.argv = vim.eval("selected")
-  pyfile <sfile>:p:h/GenerateShowStructFunction.py
-
+  let fullpath=g:path_comfortablecpp."/autoload/GenerateShowStructFunction.py"
+  execute 'pyfile '.fullpath
 endfunction
 
 let &cpo = s:save_cpo
